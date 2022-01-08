@@ -1,8 +1,9 @@
-from math import gcd
-
 def solution(n, m):
-    answer = []
-    answer.append(gcd(n,m))
-    answer.append(n*m/gcd(n,m))
-        
-    return answer
+    a,b = max(n,m),min(n,m)
+    r = 1
+
+    while r > 0:
+      r = a % b
+      a, b = b, r
+
+    return [a, n*m/a]

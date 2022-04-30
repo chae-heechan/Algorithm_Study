@@ -1,10 +1,10 @@
 def solution(num):
-    answer = 0
-    while num != 1 and answer < 500 :
-        num = (num/2) if num%2==0 else (num*3+1)
-        answer += 1
-        
-    if answer >= 500:
-        answer = -1
-    
-    return answer
+    count = 0
+    while num != 1 and count < 500:
+        num = (num/2) if num % 2 == 0 else (num*3+1)
+        count += 1
+
+    if count >= 500:
+        count = -1
+
+    return count

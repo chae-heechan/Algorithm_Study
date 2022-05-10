@@ -1,8 +1,8 @@
 def solution(phone_book):
-
+    
     phone_book.sort()
-
-    for index in range(len(phone_book)-1):
-        if phone_book[index] == phone_book[index+1][:len(phone_book[index])]:
+    
+    for n1, n2 in zip(phone_book, phone_book[1:]):
+        if n2.startswith(n1):
             return False
     return True

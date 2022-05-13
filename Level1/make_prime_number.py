@@ -1,6 +1,5 @@
 from itertools import combinations
 
-
 def solution(nums):
     answer = list(combinations(nums, 3))
     cnt = 0

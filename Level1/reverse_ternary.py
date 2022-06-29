@@ -1,7 +1,8 @@
 def solution(n):
-    result = ''
+    base = ''
+    
     while n > 0:
-        n, m = divmod(n, 3)
-        result += str(m)
-        
-    return int(result, 3)
+        n, mod = divmod(n, 3)
+        base += str(mod)
+    
+    return int(base, 3)

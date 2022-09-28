@@ -17,5 +17,4 @@ def main():
     except ValueError:
         print(-1)
 
-
 main()

@@ -9,6 +9,7 @@ def main():
         mat[b][a] = 1
     print(visited)
     dfs(visited, v, mat)
+    bfs(visited, v, mat)
 
 
 def dfs(visited, v, mat):

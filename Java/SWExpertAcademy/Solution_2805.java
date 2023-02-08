@@ -1,8 +1,12 @@
+package SWExpertAcademy;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
+// D3
+// 농작물 수확하기
 public class Solution_2805 {
     static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     static int talla;

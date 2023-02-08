@@ -1,8 +1,12 @@
+package BeakJoon;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
+// 실버 4
+// 스위치 켜고 끄기
 public class Main_1244 {
     static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     static int cuenta;

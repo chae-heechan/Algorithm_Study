@@ -1,6 +1,10 @@
+package BeakJoon;
+
 import java.math.BigDecimal;
 import java.util.Scanner;
 
+// 실버 1
+// 하노이 탑
 class Main_1914 {
   static StringBuffer bf = new StringBuffer();
 

@@ -1,8 +1,12 @@
+package SWExpertAcademy;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
+// D3
+// 원재의 메모리 복구하기
 public class Solution_1289 {
     public static int count = 0;
     public static void main(String[] args) throws IOException {

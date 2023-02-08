@@ -1,5 +1,9 @@
+package BeakJoon;
+
 import java.util.Scanner;
 
+// 실버 3
+// N과 M (1)
 public class Main_15649 {
     static int n;
     static int m;

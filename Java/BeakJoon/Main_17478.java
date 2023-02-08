@@ -1,5 +1,9 @@
+package BeakJoon;
+
 import java.util.Scanner;
 
+// 실버 5
+// 재귀함수가 뭔가요?
 public class Main_17478 {
     public static int count = 0;
     public static void main(String[] args) {

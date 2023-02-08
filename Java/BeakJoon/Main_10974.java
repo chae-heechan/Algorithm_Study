@@ -1,5 +1,9 @@
+package BeakJoon;
+
 import java.util.Scanner;
 
+// 실버 3
+// 모든 순열
 public class Main_10974 {
     public static final StringBuilder sb = new StringBuilder();
     public static void main(String[] args) {

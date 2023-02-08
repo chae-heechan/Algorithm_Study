@@ -1,8 +1,12 @@
+package SWExpertAcademy;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
+// D3
+// Flatten
 public class Solution_1208 {
     private static final int SIZE = 100;
     static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

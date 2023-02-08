@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
+// 브론즈 1
+// 색종이
 public class Main_10163 {
     private static final int SIZE = 1001;
     public static void main(String[] args) throws IOException {

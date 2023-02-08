@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
+// 브론즈 2
+// 블랙잭
 public class Main_2798 {
     static int k;
     static int maxValue;

@@ -1,8 +1,12 @@
+package SWExpertAcademy;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
+// D4
+// Ladder1
 public class Solution_1210 {
     private static final int SIZE = 100;
     static int[][] escalera = new int[SIZE][SIZE];

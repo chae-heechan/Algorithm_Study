@@ -1,4 +1,6 @@
-class Solution {
+package Programmers;
+
+class Reminder1 {
     public int solution(int n) {
         int answer;
 

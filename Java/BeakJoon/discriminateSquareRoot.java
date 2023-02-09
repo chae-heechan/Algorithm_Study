@@ -1,4 +1,6 @@
-class Solution {
+package BeakJoon;
+
+class DiscriminateSquareRoot {
     public long solution(long n) {
         Double x = Math.sqrt(n);
         if (x == x.intValue()) {

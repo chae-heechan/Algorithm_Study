@@ -1,8 +1,10 @@
+package Programmers;
+
 import java.util.stream.Stream;
 import java.util.Arrays;
 import java.util.Collections;
 
-class Solution {
+class IntReverseSort {
     public long solution(long n) {
         long answer = 0;
 

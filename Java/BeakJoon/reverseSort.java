@@ -1,7 +1,9 @@
+package BeakJoon;
+
 import java.util.Arrays;
 import java.util.stream.Stream;
 
-class Solution {
+class ReserveSort {
     public int[] solution(long n) {
         String s = String.valueOf(n);
         int len = s.length();

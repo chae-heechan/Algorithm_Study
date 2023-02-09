@@ -1,4 +1,6 @@
-class Solution {
+package Programmers;
+
+class XForN {
     public long[] solution(int x, int n) {
         long[] answer = new long[n];
         answer[0] = x;

@@ -1,4 +1,6 @@
-class Solution {
+package Programmers;
+
+class HarshadNumber {
     public boolean solution(int x) {
         int sum = 0;
         String str = Integer.toString(x);

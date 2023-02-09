@@ -22,7 +22,8 @@ public class Solution_2001 {
             int[][] sum = new int[n + 1][n + 1];
 
             for (int i = 1; i <= n; i++) {
-                arr[i] = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+                arr[i][0] = 0;
+                System.arraycopy(Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray(), 0, arr[i], 1,n);
                 for (int j = 1; j <= n; j++) {
                     sum[i][j] = sum[i][j - 1] + sum[i - 1][j] + arr[i][j] - sum[i - 1][j - 1];
                 }

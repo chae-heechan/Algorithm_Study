@@ -15,33 +15,48 @@ public class Solution_1218 {
 
             int n = Integer.parseInt(br.readLine());
 
-            char[] brackets = br.readLine().toCharArray();
+            Stack<Character> stack = new Stack<>();
 
-            Stack<Character> a = new Stack<>();
+            for (char bracket : br.readLine().toCharArray()) {
+                // 열린 괄호가 들어올 경우 무조건 push
+                if (bracket == '(' || bracket == '{' || bracket == '[' || bracket == '<') {
+                    stack.push(bracket);
+                    continue;
+                }else if(stack.isEmpty()){      // 닫힌 괄호 이면서 Stack이 비어있을 경우 answer = 0
+                    answer = 0;
+                    break;
+                }
 
-            for (char bracket : brackets) {
-                if (a.isEmpty() || bracket == '(' || bracket == '{' || bracket == '[' || bracket == '<') {
-                    a.push(bracket);
+                // 입력된 괄호가 닫힌 괄호이고 Stack의 peek과 같은 괄호일 경우 pop
+                if (stack.peek() == '(' && bracket == ')') {
+                    stack.pop();
                     continue;
                 }
 
-                if (a.peek() == '(' && bracket == ')') {
-                    a.pop();
-                    continue;
-                } else if (a.peek() == '{' && bracket == '}') {
-                    a.pop();
-                    continue;
-                } else if (a.peek() == '[' && bracket == ']') {
-                    a.pop();
-                    continue;
-                } else if (a.peek() == '<' && bracket == '>') {
-                    a.pop();
+                if (stack.peek() == '{' && bracket == '}') {
+                    stack.pop();
                     continue;
                 }
 
+                if (stack.peek() == '[' && bracket == ']') {
+                    stack.pop();
+                    continue;
+                }
+
+                if (stack.peek() == '<' && bracket == '>') {
+                    stack.pop();
+                    continue;
+                }
+
+                // 들어온 입력이 맞지 않은 경우 answer = 0
                 answer = 0;
+                break;
 
             }
+
+            // 스택이 비어있지 않을 경우 answer = 0
+            if (!stack.isEmpty())
+                answer = 0;
 
             System.out.printf("#%d %d\n", t, answer);
         }

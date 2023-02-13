@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
+// 골드 3
+// 주사위 굴리기 2
 public class Main_23288 {
     static int[][] arr;
     static int[][] points;

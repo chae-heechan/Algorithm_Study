@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
+// 실버 2
+// DNA 비밀번호
 public class Main_12891 {
     static int s;
     static int p;

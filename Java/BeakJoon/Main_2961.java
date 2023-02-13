@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
+// 실버 2
+// 도영이가 만든 맛있는 음식
 public class Main_2961 {
     static int n;
     static long min;

@@ -28,7 +28,7 @@ public class Solution_4014 {
             int check;
 
             // [0][0]에서 [0][n-2]까지 돌면서 위아래로 탐색
-            for (int i = 0; i < n - 1; i++) {
+            for (int i = 0; i < n; i++) {
                 check = 0;
                 for (int j = 0; j < n - 1; j++) {
                     // 다음 거랑 비교
@@ -51,6 +51,7 @@ public class Solution_4014 {
                             break;
                         }
                     }
+
                 }
                 if (check == 0) {
                     count++;

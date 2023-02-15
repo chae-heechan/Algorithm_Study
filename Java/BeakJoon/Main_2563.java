@@ -10,10 +10,10 @@ import java.util.Arrays;
 public class Main_2563 {
     private static final int SIZE = 100;
     public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
         int result = 0;
         int[][] arr = new int[SIZE][SIZE];
-
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         int count = Integer.parseInt(br.readLine());
 

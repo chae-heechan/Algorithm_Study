@@ -8,7 +8,7 @@ import java.util.Arrays;
 // 실버 5
 // 색종이
 public class Main_2563 {
-    private static final int SIZE = 1001;
+    private static final int SIZE = 100;
     public static void main(String[] args) throws IOException {
         int result = 0;
         int[][] arr = new int[SIZE][SIZE];

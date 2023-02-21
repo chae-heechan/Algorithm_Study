@@ -2,6 +2,8 @@ package SWExpertAcademy;
 
 import java.util.Scanner;
 
+// D2
+// 달팽이 숫자
 public class Solution_1954 {
     public static void main(String[] args) {
 

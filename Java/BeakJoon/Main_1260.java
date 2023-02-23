@@ -1,5 +1,10 @@
 package BeakJoon;
 
+/*
+    dfs는 재귀로 구현
+    bfs는 queue로 구현
+ */
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -50,6 +55,7 @@ public class Main_1260 {
 
     }
 
+    // 재귀로 구현
     private static void dfs(int start){
         visited[start] = true;
         sb.append(start).append(" ");
@@ -61,6 +67,7 @@ public class Main_1260 {
         }
     }
 
+    // 큐로 구현
     private static void bfs(int start){
         q.offer(start);     // 큐에 추가
         visited[start] = true;  // 방문 체크

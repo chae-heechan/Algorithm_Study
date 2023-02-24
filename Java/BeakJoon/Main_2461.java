@@ -60,7 +60,6 @@ public class Main_2461 {
             if (max < es.punto) max = es.punto;
             if (min > es.punto) min = es.punto;
             answer = max - min;
-            pq.
 
         }
 

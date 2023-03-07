@@ -58,6 +58,7 @@ public class Main_21611 {
 
     }
 
+    // 인덱스 배열 생성
     private static void saveIndex() {
         int x = 0, y = 0;
         for (int i = indexMap.length - 2; i >= 0; i--) {
@@ -77,11 +78,13 @@ public class Main_21611 {
         }
     }
 
+    // 경계 확인
     private static boolean isPossibleToMove(int x, int y) {
         if (x >= 0 && x < n && y >= 0 && y < n && !visited[x][y]) return true;
         return false;
     }
 
+    // 블리자드
     private static void blizzard(int d, int s) {
         int[] ir = {0, -1, 1, 0, 0};       // 0 상 하 좌 우
         int[] ic = {0, 0, 0, -1, 1};
@@ -94,6 +97,7 @@ public class Main_21611 {
         }
     }
 
+    // 정렬
     private static void ordenar() {
         Location loc, left, right;      // left는 0이 시작하는 지점
         int leftIndex;
@@ -124,6 +128,7 @@ public class Main_21611 {
         return;
     }
 
+    // 연속된 구슬 삭제
     private static boolean removeConsecutiveNumber() {
         boolean check = false;  // 삭제된 구슬이 있을 경우 true
         Location left, right;
@@ -170,14 +175,15 @@ public class Main_21611 {
         return check;
     }
 
+    // 구슬 변화
     private static void cambioPerla() {
         int[][] newMap = new int[n][n];
         int newIndex = 0;
         int oldIndex = 0;
 
         for (oldIndex = 0; oldIndex < indexMap.length - 2; oldIndex++) {
-            int a = 1;
-            int b = map[indexMap[oldIndex].x][indexMap[oldIndex].y];
+            int a = 1;  // 연속된 숫자 개수
+            int b = map[indexMap[oldIndex].x][indexMap[oldIndex].y];    // 구슬의 번호
 
             if (b == 0) break;
 
@@ -187,18 +193,22 @@ public class Main_21611 {
                 a++;
                 oldIndex++;
                 b = nextValue;
+                // 인덱스가 끝까지 갈 경우 정지
                 if (oldIndex == n * n - 2) break;
                 nextValue = map[indexMap[oldIndex + 1].x][indexMap[oldIndex + 1].y];
             }
 
+            // 인덱스가 끝까지 갈 경우 정지
             if(newIndex >= n * n - 1) break;
 
+            // 새로운 맵에 순서대로 a, b구슬 저장
             newMap[indexMap[newIndex].x][indexMap[newIndex].y] = a;
             newIndex++;
             newMap[indexMap[newIndex].x][indexMap[newIndex].y] = b;
             newIndex++;
         }
 
+        // 맵은 새로운 맵
         map = newMap;
 
     }

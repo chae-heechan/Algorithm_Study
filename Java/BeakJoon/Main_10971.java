@@ -23,6 +23,11 @@ public class Main_10971 {
             map[i] = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         }
 
+        String s = "1234";
+        String a;
+        a = s.substring(0, 1);
+        char c = a.charAt(1);
+
         for (int i = 0; i < n; i++) {
             visited[i] = true;
             dfs(i, i, 0, 0);

@@ -1,4 +1,4 @@
-class Solution:
+class Assignment:
     def arrayPairSum(self, nums: List[int]) -> int:
         nums.sort(reverse = True)
         

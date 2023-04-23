@@ -1,4 +1,4 @@
-class Solution():
+class Assignment():
     def trap(self, height: List[int]) -> int:
         if not height:
             return 0

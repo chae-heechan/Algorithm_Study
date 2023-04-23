@@ -1,6 +1,6 @@
 import itertools
 
-class Solution:
+class Assignment:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         answer = []
         for i, j in itertools.combinations(nums, 2):

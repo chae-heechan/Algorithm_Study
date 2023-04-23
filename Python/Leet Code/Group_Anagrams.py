@@ -1,4 +1,4 @@
-class Solution:
+class Assignment:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         anagrams = collections.defaultdict(list)
         

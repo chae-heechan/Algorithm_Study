@@ -1,7 +1,7 @@
 import numpy
 
 
-class Solution:
+class Assignment:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
         answer = numpy.ones(len(nums))
         answer = answer.astype(int)

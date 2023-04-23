@@ -1,4 +1,4 @@
-class Solution:
+class Assignment:
     def longestPalindrome(self, s: str) -> str:
         
         def expand(left: int, right: int) -> str:

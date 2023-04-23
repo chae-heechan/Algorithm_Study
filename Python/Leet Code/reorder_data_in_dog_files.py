@@ -1,4 +1,4 @@
-class Solution:
+class Assignment:
     def reorderLogFiles(self, logs: List[str]) -> List[str]:
         letters, digits = [], []
         for log in logs:

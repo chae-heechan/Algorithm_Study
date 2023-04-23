@@ -1,6 +1,6 @@
 import itertools
 
-class Solution:
+class Assignment:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         answer = []    
         nums.sort()

@@ -1,6 +1,6 @@
 import re
 
-class Solution:
+class Assignment:
     def isPalindrome(self, s: str) -> bool:
         s = s.upper()
         s = re.sub('[^A-Z0-9]', '', s)

@@ -1,6 +1,6 @@
 import re
 
-class Solution:
+class Assignment:
     def mostCommonWord(self, paragraph: str, banned: List[str]) -> str:
         
         answer_dict = {}

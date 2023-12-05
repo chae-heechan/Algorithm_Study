@@ -130,7 +130,7 @@ class Point implements Comparable<Point>{
     int r;
     int c;
 
-    public Point(int r, int c, int n) {
+    Point(int r, int c, int n) {
         this.r = r;
         this.c = c;
         this.index = r * n + c;
